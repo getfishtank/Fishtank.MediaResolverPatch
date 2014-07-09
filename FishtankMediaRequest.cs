@@ -44,7 +44,7 @@ namespace Fishtank.MediaResolverPatch
                 return string.Empty;
             if (ShortID.IsShortID(id))
                 return ShortID.Decode(id);
-            //2014-06-16 JG - Removed decode call below
+            //2014-06-16 - Removed decode call below
             return "/sitecore/media library/" + id.TrimStart(new char[1] { '/' });;
         }
     }
